@@ -85,7 +85,7 @@ $(BUILD)/$(BIN).bin: $(BUILD)/$(BIN).elf
 
 $(BUILD)/$(BIN).dfu: $(BUILD)/$(BIN).elf
 	@echo elf2dfuse $@
-	./elf2dfuse $^ $@
+	../bin/elf2dfuse $^ $@
 
 %.o:
 	@echo CC $@

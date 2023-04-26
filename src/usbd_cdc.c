@@ -724,7 +724,7 @@ static int8_t vcp_cmd_control(unsigned int index, USBD_HandleTypeDef *pdev,uint8
     /* USER CODE END 5 */
 }
 
-
+/* This is alrady contained in newlib
 void *memset (void *s, int c, size_t n)
 {
 	for (int i = 0 ; i < (int)n ; i ++) {
@@ -732,6 +732,7 @@ void *memset (void *s, int c, size_t n)
 	}
 	return s;
 }
+*/
 static uint8_t USBD_CDC_DataOut (USBD_HandleTypeDef *pdev, uint8_t epnum)
 {
 	USBD_CDC_HandleTypeDef *hcdc = context;
